@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C16B9431D19D6AD008BCE86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16B9421D19D6AD008BCE86 /* AppDelegate.swift */; };
+		1C16B9451D19D6AD008BCE86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16B9441D19D6AD008BCE86 /* ViewController.swift */; };
+		1C16B9481D19D6AD008BCE86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C16B9461D19D6AD008BCE86 /* Main.storyboard */; };
+		1C16B94A1D19D6AD008BCE86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C16B9491D19D6AD008BCE86 /* Assets.xcassets */; };
+		1C16B94D1D19D6AD008BCE86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C16B94B1D19D6AD008BCE86 /* LaunchScreen.storyboard */; };
+		1C16B9521D19D6AD008BCE86 /* Tippify WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C16B9511D19D6AD008BCE86 /* Tippify WatchKit App.app */; };
+		1C16B9581D19D6AD008BCE86 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C16B9561D19D6AD008BCE86 /* Interface.storyboard */; };
+		1C16B95A1D19D6AD008BCE86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C16B9591D19D6AD008BCE86 /* Assets.xcassets */; };
+		1C16B9611D19D6AD008BCE86 /* Tippify WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C16B9601D19D6AD008BCE86 /* Tippify WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C16B9661D19D6AD008BCE86 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16B9651D19D6AD008BCE86 /* InterfaceController.swift */; };
+		1C16B9681D19D6AD008BCE86 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16B9671D19D6AD008BCE86 /* ExtensionDelegate.swift */; };
+		1C16B96A1D19D6AD008BCE86 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16B9691D19D6AD008BCE86 /* ComplicationController.swift */; };
+		1C16B96C1D19D6AD008BCE86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C16B96B1D19D6AD008BCE86 /* Assets.xcassets */; };
+		1C43F6671D1CAECC00B6F271 /* tippifyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C43F6661D1CAECC00B6F271 /* tippifyLogo.png */; };
+		1C43F6691D1DC3D000B6F271 /* Untitled_drawing_2_.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C43F6681D1DC3D000B6F271 /* Untitled_drawing_2_.png */; };
+		1C530B941D1B983100B39179 /* Recourses in Resources */ = {isa = PBXBuildFile; fileRef = 1C530B931D1B983100B39179 /* Recourses */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C16B9531D19D6AD008BCE86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C16B9371D19D6AD008BCE86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C16B9501D19D6AD008BCE86;
+			remoteInfo = "Tippify WatchKit App";
+		};
+		1C16B9621D19D6AD008BCE86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C16B9371D19D6AD008BCE86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C16B95F1D19D6AD008BCE86;
+			remoteInfo = "Tippify WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C16B9731D19D6AD008BCE86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C16B9611D19D6AD008BCE86 /* Tippify WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C16B9771D19D6AD008BCE86 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1C16B9521D19D6AD008BCE86 /* Tippify WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C16B93F1D19D6AD008BCE86 /* Tippify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tippify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C16B9421D19D6AD008BCE86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C16B9441D19D6AD008BCE86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C16B9471D19D6AD008BCE86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C16B9491D19D6AD008BCE86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C16B94C1D19D6AD008BCE86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C16B94E1D19D6AD008BCE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C16B9511D19D6AD008BCE86 /* Tippify WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tippify WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C16B9571D19D6AD008BCE86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1C16B9591D19D6AD008BCE86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C16B95B1D19D6AD008BCE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C16B9601D19D6AD008BCE86 /* Tippify WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tippify WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C16B9651D19D6AD008BCE86 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1C16B9671D19D6AD008BCE86 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1C16B9691D19D6AD008BCE86 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1C16B96B1D19D6AD008BCE86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C16B96D1D19D6AD008BCE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C43F6661D1CAECC00B6F271 /* tippifyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tippifyLogo.png; sourceTree = "<group>"; };
+		1C43F6681D1DC3D000B6F271 /* Untitled_drawing_2_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled_drawing_2_.png; sourceTree = "<group>"; };
+		1C530B931D1B983100B39179 /* Recourses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Recourses; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C16B93C1D19D6AD008BCE86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C16B95D1D19D6AD008BCE86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C16B9361D19D6AD008BCE86 = {
+			isa = PBXGroup;
+			children = (
+				1C43F6661D1CAECC00B6F271 /* tippifyLogo.png */,
+				1C16B9411D19D6AD008BCE86 /* Tippify */,
+				1C16B9551D19D6AD008BCE86 /* Tippify WatchKit App */,
+				1C16B9641D19D6AD008BCE86 /* Tippify WatchKit Extension */,
+				1C16B9401D19D6AD008BCE86 /* Products */,
+				1C530B931D1B983100B39179 /* Recourses */,
+			);
+			sourceTree = "<group>";
+		};
+		1C16B9401D19D6AD008BCE86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C16B93F1D19D6AD008BCE86 /* Tippify.app */,
+				1C16B9511D19D6AD008BCE86 /* Tippify WatchKit App.app */,
+				1C16B9601D19D6AD008BCE86 /* Tippify WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C16B9411D19D6AD008BCE86 /* Tippify */ = {
+			isa = PBXGroup;
+			children = (
+				1C16B9421D19D6AD008BCE86 /* AppDelegate.swift */,
+				1C16B9441D19D6AD008BCE86 /* ViewController.swift */,
+				1C16B9461D19D6AD008BCE86 /* Main.storyboard */,
+				1C16B9491D19D6AD008BCE86 /* Assets.xcassets */,
+				1C16B94B1D19D6AD008BCE86 /* LaunchScreen.storyboard */,
+				1C43F6681D1DC3D000B6F271 /* Untitled_drawing_2_.png */,
+				1C16B94E1D19D6AD008BCE86 /* Info.plist */,
+			);
+			path = Tippify;
+			sourceTree = "<group>";
+		};
+		1C16B9551D19D6AD008BCE86 /* Tippify WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1C16B9561D19D6AD008BCE86 /* Interface.storyboard */,
+				1C16B9591D19D6AD008BCE86 /* Assets.xcassets */,
+				1C16B95B1D19D6AD008BCE86 /* Info.plist */,
+			);
+			path = "Tippify WatchKit App";
+			sourceTree = "<group>";
+		};
+		1C16B9641D19D6AD008BCE86 /* Tippify WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1C16B9651D19D6AD008BCE86 /* InterfaceController.swift */,
+				1C16B9671D19D6AD008BCE86 /* ExtensionDelegate.swift */,
+				1C16B9691D19D6AD008BCE86 /* ComplicationController.swift */,
+				1C16B96B1D19D6AD008BCE86 /* Assets.xcassets */,
+				1C16B96D1D19D6AD008BCE86 /* Info.plist */,
+			);
+			path = "Tippify WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C16B93E1D19D6AD008BCE86 /* Tippify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C16B9781D19D6AD008BCE86 /* Build configuration list for PBXNativeTarget "Tippify" */;
+			buildPhases = (
+				1C16B93B1D19D6AD008BCE86 /* Sources */,
+				1C16B93C1D19D6AD008BCE86 /* Frameworks */,
+				1C16B93D1D19D6AD008BCE86 /* Resources */,
+				1C16B9771D19D6AD008BCE86 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C16B9541D19D6AD008BCE86 /* PBXTargetDependency */,
+			);
+			name = Tippify;
+			productName = Tippify;
+			productReference = 1C16B93F1D19D6AD008BCE86 /* Tippify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C16B9501D19D6AD008BCE86 /* Tippify WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C16B9741D19D6AD008BCE86 /* Build configuration list for PBXNativeTarget "Tippify WatchKit App" */;
+			buildPhases = (
+				1C16B94F1D19D6AD008BCE86 /* Resources */,
+				1C16B9731D19D6AD008BCE86 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C16B9631D19D6AD008BCE86 /* PBXTargetDependency */,
+			);
+			name = "Tippify WatchKit App";
+			productName = "Tippify WatchKit App";
+			productReference = 1C16B9511D19D6AD008BCE86 /* Tippify WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1C16B95F1D19D6AD008BCE86 /* Tippify WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C16B9701D19D6AD008BCE86 /* Build configuration list for PBXNativeTarget "Tippify WatchKit Extension" */;
+			buildPhases = (
+				1C16B95C1D19D6AD008BCE86 /* Sources */,
+				1C16B95D1D19D6AD008BCE86 /* Frameworks */,
+				1C16B95E1D19D6AD008BCE86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tippify WatchKit Extension";
+			productName = "Tippify WatchKit Extension";
+			productReference = 1C16B9601D19D6AD008BCE86 /* Tippify WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C16B9371D19D6AD008BCE86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Marco Pizarro";
+				TargetAttributes = {
+					1C16B93E1D19D6AD008BCE86 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4DY8U6NQ76;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					1C16B9501D19D6AD008BCE86 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4DY8U6NQ76;
+						LastSwiftMigration = 0800;
+					};
+					1C16B95F1D19D6AD008BCE86 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4DY8U6NQ76;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 1C16B93A1D19D6AD008BCE86 /* Build configuration list for PBXProject "Tippify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C16B9361D19D6AD008BCE86;
+			productRefGroup = 1C16B9401D19D6AD008BCE86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C16B93E1D19D6AD008BCE86 /* Tippify */,
+				1C16B9501D19D6AD008BCE86 /* Tippify WatchKit App */,
+				1C16B95F1D19D6AD008BCE86 /* Tippify WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C16B93D1D19D6AD008BCE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C43F6671D1CAECC00B6F271 /* tippifyLogo.png in Resources */,
+				1C16B94D1D19D6AD008BCE86 /* LaunchScreen.storyboard in Resources */,
+				1C43F6691D1DC3D000B6F271 /* Untitled_drawing_2_.png in Resources */,
+				1C530B941D1B983100B39179 /* Recourses in Resources */,
+				1C16B94A1D19D6AD008BCE86 /* Assets.xcassets in Resources */,
+				1C16B9481D19D6AD008BCE86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C16B94F1D19D6AD008BCE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C16B95A1D19D6AD008BCE86 /* Assets.xcassets in Resources */,
+				1C16B9581D19D6AD008BCE86 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C16B95E1D19D6AD008BCE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C16B96C1D19D6AD008BCE86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C16B93B1D19D6AD008BCE86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C16B9451D19D6AD008BCE86 /* ViewController.swift in Sources */,
+				1C16B9431D19D6AD008BCE86 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C16B95C1D19D6AD008BCE86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C16B9681D19D6AD008BCE86 /* ExtensionDelegate.swift in Sources */,
+				1C16B9661D19D6AD008BCE86 /* InterfaceController.swift in Sources */,
+				1C16B96A1D19D6AD008BCE86 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C16B9541D19D6AD008BCE86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C16B9501D19D6AD008BCE86 /* Tippify WatchKit App */;
+			targetProxy = 1C16B9531D19D6AD008BCE86 /* PBXContainerItemProxy */;
+		};
+		1C16B9631D19D6AD008BCE86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C16B95F1D19D6AD008BCE86 /* Tippify WatchKit Extension */;
+			targetProxy = 1C16B9621D19D6AD008BCE86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C16B9461D19D6AD008BCE86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C16B9471D19D6AD008BCE86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C16B94B1D19D6AD008BCE86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C16B94C1D19D6AD008BCE86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C16B9561D19D6AD008BCE86 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C16B9571D19D6AD008BCE86 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C16B96E1D19D6AD008BCE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C16B96F1D19D6AD008BCE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C16B9711D19D6AD008BCE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Tippify WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tippify.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		1C16B9721D19D6AD008BCE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Tippify WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tippify.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		1C16B9751D19D6AD008BCE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tippify_WatchKit_Extension;
+				INFOPLIST_FILE = "Tippify WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tippify.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		1C16B9761D19D6AD008BCE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tippify_WatchKit_Extension;
+				INFOPLIST_FILE = "Tippify WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tippify.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		1C16B9791D19D6AD008BCE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tippify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tippify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1C16B97A1D19D6AD008BCE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tippify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tippify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C16B93A1D19D6AD008BCE86 /* Build configuration list for PBXProject "Tippify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C16B96E1D19D6AD008BCE86 /* Debug */,
+				1C16B96F1D19D6AD008BCE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C16B9701D19D6AD008BCE86 /* Build configuration list for PBXNativeTarget "Tippify WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C16B9711D19D6AD008BCE86 /* Debug */,
+				1C16B9721D19D6AD008BCE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C16B9741D19D6AD008BCE86 /* Build configuration list for PBXNativeTarget "Tippify WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C16B9751D19D6AD008BCE86 /* Debug */,
+				1C16B9761D19D6AD008BCE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C16B9781D19D6AD008BCE86 /* Build configuration list for PBXNativeTarget "Tippify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C16B9791D19D6AD008BCE86 /* Debug */,
+				1C16B97A1D19D6AD008BCE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C16B9371D19D6AD008BCE86 /* Project object */;
+}

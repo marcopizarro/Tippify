@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Copyright 2016 MarCo. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnM-sp-2QP">
+                                <rect key="frame" x="20" y="562" width="560" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Untitled_drawing_2_.png" translatesAutoresizingMaskIntoConstraints="NO" id="bkE-MU-ZSy">
+                                <rect key="frame" x="20" y="66" width="560" height="415"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bkE-MU-ZSy" secondAttribute="height" multiplier="112:83" id="5GY-L8-l7A"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZnM-sp-2QP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Agl-wE-3bw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZnM-sp-2QP" secondAttribute="trailing" id="UOx-KB-WdB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bkE-MU-ZSy" secondAttribute="leading" id="WdW-A6-iva"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bkE-MU-ZSy" secondAttribute="trailing" id="eZ8-ip-g58"/>
+                            <constraint firstItem="bkE-MU-ZSy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hOC-Gu-GxE"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZnM-sp-2QP" secondAttribute="bottom" constant="20" id="vEB-5G-gHY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZnM-sp-2QP" secondAttribute="leading" id="vWh-eK-q28"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="509"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Untitled_drawing_2_.png" width="600" height="450"/>
+    </resources>
+</document>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tippify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="XAP-ID-qMn">
+                                <frame key="frameInset" minX="180" minY="20" width="240" height="225"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" preservesSuperviewLayoutMargins="YES" image="tippifyLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kTp-e9-M0X">
+                                        <frame key="frameInset" width="240" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="EwB-Ja-yB4"/>
+                                            <constraint firstAttribute="width" constant="240" id="xHx-a4-eTy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rate Your Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mm-fS-hYQ">
+                                        <frame key="frameInset" minY="180" width="240" height="17"/>
+                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wLg-5n-Tc8">
+                                        <frame key="frameInset" minY="197" width="240" height="29"/>
+                                        <segments>
+                                            <segment title="OK"/>
+                                            <segment title="Good"/>
+                                            <segment title="Great"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="changeTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="DEa-Ep-yBC"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Mm-fS-hYQ" firstAttribute="centerX" secondItem="XAP-ID-qMn" secondAttribute="centerX" id="1DT-Ns-218"/>
+                                    <constraint firstItem="wLg-5n-Tc8" firstAttribute="centerX" secondItem="XAP-ID-qMn" secondAttribute="centerX" id="BVU-0i-bUW"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWN-Nd-5sZ">
+                                <frame key="frameInset" minX="259" minY="296" width="64" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqR-sa-4NK"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUJ-6o-Jjj">
+                                <frame key="frameInset" minX="218" minY="394" width="165" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D7w-hI-Zal">
+                                        <frame key="frameInset" width="165" height="76"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Split The Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ko-Ov-sFe">
+                                                <frame key="frameInset" width="165" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eis-8K-2mw">
+                                                <frame key="frameInset" minY="24" width="165" height="29"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1 Person " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-au-d7f">
+                                                        <frame key="frameInset" width="71" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="h1L-10-Cr9">
+                                                        <frame key="frameInset" minX="71" width="94" height="29"/>
+                                                        <connections>
+                                                            <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="DDz-hI-hJs"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Per Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUL-PZ-ZbI">
+                                                <frame key="frameInset" minY="53" width="165" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tC-v2-aYz">
+                                <frame key="frameInset" minX="191" minY="258" width="219" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter Meal Total " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSX-vA-snE">
+                                        <frame key="frameInset" width="129" height="30"/>
+                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R4M-hX-m1L">
+                                        <frame key="frameInset" minX="129" width="90" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="i0d-CV-AX8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hg1-VT-QjG">
+                                <frame key="frameInset" minX="180" minY="334" width="241" height="41"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip: 0.0 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="61" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-r6-wwk">
+                                        <frame key="frameInset" width="110" height="41"/>
+                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" Total: 0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvD-Ia-oaG">
+                                        <frame key="frameInset" minX="110" width="132" height="41"/>
+                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="j1P-r6-wwk" firstAttribute="top" secondItem="kvD-Ia-oaG" secondAttribute="top" id="mHo-tE-L7K"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4tC-v2-aYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2k7-hE-5al"/>
+                            <constraint firstItem="Hg1-VT-QjG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7jE-2f-Dgm"/>
+                            <constraint firstItem="4tC-v2-aYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8cn-Yz-TdF"/>
+                            <constraint firstItem="dUJ-6o-Jjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hb1-Rp-x4Z"/>
+                            <constraint firstItem="XAP-ID-qMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fKs-vr-hg6"/>
+                            <constraint firstItem="XAP-ID-qMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8b-cx-adk"/>
+                            <constraint firstItem="4tC-v2-aYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibs-8S-jGj"/>
+                            <constraint firstItem="4tC-v2-aYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khg-hy-ODT"/>
+                            <constraint firstItem="dUJ-6o-Jjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ruN-yL-OV3"/>
+                            <constraint firstItem="wWN-Nd-5sZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yyC-M3-bjI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Controller" destination="wLg-5n-Tc8" id="dGQ-Va-xTk"/>
+                        <outlet property="perPerson" destination="hUL-PZ-ZbI" id="NaX-2w-0A9"/>
+                        <outlet property="stepper" destination="h1L-10-Cr9" id="xEt-FJ-7AW"/>
+                        <outlet property="subtotal" destination="R4M-hX-m1L" id="qmu-fs-nU6"/>
+                        <outlet property="tip" destination="j1P-r6-wwk" id="uN8-kl-Qbh"/>
+                        <outlet property="total" destination="kvD-Ia-oaG" id="INh-cI-etE"/>
+                        <outlet property="valueLabel" destination="MGo-au-d7f" id="TWq-Jp-rhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="226"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tippifyLogo.png" width="960" height="720"/>
+    </resources>
+</document>
